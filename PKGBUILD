@@ -1,5 +1,5 @@
 # Maintainer: Thomas Leon Highbaugh <thighbaugh@zoho.com>
-pkgname=dmenu-tlh-git
+pkgname=dmenu-electrictantra-git
 pkgver=1.1
 pkgrel=1
 epoch=
