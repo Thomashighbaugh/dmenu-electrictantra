@@ -23,7 +23,7 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeMid] = { "#d7d7d7", "#24232a" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 15;
+static unsigned int lines      = 0;
 static unsigned int lineheight = 22;         /* -h option; minimum height of a menu line     */
 
 /*
