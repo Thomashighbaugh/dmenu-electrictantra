@@ -1,8 +1,4 @@
-/*  ____ _____  */
-/* |  _ \_   _|  Derek Taylor (DistroTube) */
-/* | | | || |  	http://www.youtube.com/c/DistroTube */
-/* | |_| || |  	http://www.gitlab.com/dwt1/ */
-/* |____/ |_|  	*/ 
+
 
 /* See LICENSE file for copyright and license details. */
 /* Default settings; can be overriden by command line. */
@@ -12,18 +8,19 @@ static int centered = 0;                    /* -c option; centers dmenu on scree
 static int min_width = 600;                    /* minimum width when centered */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
+	"Share Tech Bold:pixelsize=12:antialias=true:autohint=true",
 	"Hack:pixelsize=11:antialias=true:autohint=true",
-	"JoyPixels:pixelsize=8:antialias=true:autohint=true"
+	"JoyPixels:pixelsize=18:antialias=true:autohint=true"
 };
 static const char *prompt      = NULL;      /* -p option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	[SchemeNorm] = { "#cccccc", "#282a36" },
-	[SchemeSel] = { "#ffffff", "#924441" },
-	[SchemeSelHighlight] = { "#d7d7d7", "#000000" },
-	[SchemeNormHighlight] = { "#e78481", "#000000" },
-	[SchemeOut] = { "#000000", "#00ffff" },
-	[SchemeMid] = { "#d7d7d7", "#1f2026" },
+	[SchemeNorm] = { "#edeeff", "#24232a" },
+	[SchemeSel] = { "#f2f2f2", "#24232a" },
+	[SchemeSelHighlight] = { "#edeeff", "#00caff" },
+	[SchemeNormHighlight] = { "#f2f2f2", "#24232a" },
+	[SchemeOut] = { "#000000", "#00caff" },
+	[SchemeMid] = { "#d7d7d7", "#24232a" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
 static unsigned int lines      = 0;
@@ -37,4 +34,3 @@ static const char worddelimiters[] = " ";
 
 /* Size of the window border */
 static unsigned int border_width = 0;  /* -bw option; to add border width */
-
